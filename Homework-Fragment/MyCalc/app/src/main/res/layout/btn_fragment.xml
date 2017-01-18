@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/btnfragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*" >
+
+        <!--第一行，用于表示AC、＋—、％、／-->
+        <TableRow>
+            <Button android:text="AC"
+                    android:id="@+id/onBtnACClick"
+                    android:background="@drawable/buttonstyle"
+                    android:textSize="40dp"
+                    android:layout_width="1dp"
+                />
+            <Button android:text="±"
+                    android:id="@+id/onBtnPandSClick"
+                    android:background="@drawable/buttonstyle"
+                    android:textSize="40dp"
+                    android:layout_width="1dp" />
+            <Button android:text="％"
+                    android:id="@+id/onBtnPerClick"
+                    android:background="@drawable/buttonstyle"
+                    android:textSize="40dp"
+                    android:layout_width="1dp" />
+            <Button android:text="÷"
+                    android:id="@+id/onBtnDClick"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/buttonstyle2"
+                    android:textSize="40dp"
+                    android:layout_width="1dp" />
+        </TableRow>
+        <!--第二行，用于表示7、8、9、×-->
+        <TableRow>
+            <Button android:text="7"
+                    android:id="@+id/onBtn7Click"
+                    android:background="@drawable/buttonstyle1"
+                    android:textSize="40dp"
+                    android:layout_width="1dp" />
+            <Button android:text="8"
+                    android:id="@+id/onBtn8Click"
+                    android:background="@drawable/buttonstyle1"
+                    android:textSize="40dp"
+                    android:layout_width="1dp" />
+            <Button android:text="9"
+                    android:id="@+id/onBtn9Click"
+                    android:background="@drawable/buttonstyle1"
+                    android:textSize="40dp"
+                    android:layout_width="1dp" />
+            <Button android:text="×"
+                    android:id="@+id/onBtnMClick"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/buttonstyle2"
+                    android:textSize="40dp"
+                    android:layout_width="1dp" />
+        </TableRow>
+        <!--第三行，用于表示4、5、6、jian-->
+        <TableRow>
+            <Button android:text="4"
+                    android:id="@+id/onBtn4Click"
+                    android:background="@drawable/buttonstyle1"
+                    android:textSize="40dp"
+                    android:layout_width="1dp" />
+            <Button android:text="5"
+                    android:id="@+id/onBtn5Click"
+                    android:background="@drawable/buttonstyle1"
+                    android:textSize="40dp"
+                    android:layout_width="1dp" />
+            <Button android:text="6"
+                    android:id="@+id/onBtn6Click"
+                    android:background="@drawable/buttonstyle1"
+                    android:textSize="40dp"
+                    android:layout_width="1dp" />
+            <Button android:text="－"
+                    android:id="@+id/onBtnSClick"
+                    android:textSize="40dp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/buttonstyle2"
+                    android:layout_width="1dp" />
+        </TableRow>
+        <!--第四行，用于表示1、2、3、＋-->
+        <TableRow>
+            <Button android:text="1"
+                    android:id="@+id/onBtn1Click"
+                    android:background="@drawable/buttonstyle1"
+                    android:textSize="40dp"
+                    android:layout_width="1dp" />
+            <Button android:text="2"
+                    android:id="@+id/onBtn2Click"
+                    android:background="@drawable/buttonstyle1"
+                    android:textSize="40dp"
+                    android:layout_width="1dp" />
+            <Button android:text="3"
+                    android:id="@+id/onBtn3Click"
+                    android:background="@drawable/buttonstyle1"
+                    android:textSize="40dp"
+                    android:layout_width="1dp" />
+            <Button android:text="＋"
+                    android:id="@+id/onBtnPClick"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/buttonstyle2"
+                    android:textSize="40dp"
+                    android:layout_width="1dp" />
+        </TableRow>
+        <!--第五行，用于表示0、doc、＝-->
+        <TableRow>
+            <Button android:text="0"
+                    android:id="@+id/onBtn0Click"
+                    android:background="@drawable/buttonstyle1"
+                    android:textSize="40dp"
+                    android:layout_width="1dp"
+                    android:layout_column="0"
+                    android:layout_span="2"/>
+            <Button android:text="."
+                    android:id="@+id/onBtnDocClick"
+                    android:background="@drawable/buttonstyle1"
+                    android:textSize="40dp"
+                    android:layout_width="1dp" />
+            <Button android:text="="
+                    android:id="@+id/onBtnEquClick"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/buttonstyle2"
+                    android:textSize="40dp"
+                    android:layout_width="1dp" />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
